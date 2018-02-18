@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/master.css">
+  <title>Dardan Demiri's Quote Machine</title>
+
+</head>
+
+
+
+
+<body>
+  <div class="header container-fluid">
+    <div class="container">
+      <div class="row content text-center">
+
+        <div class="icon-square myLocation col-sm-4">
+          <i class="fas onHover fa-map-marker-alt fa-5x"></i>
+          <h4>Weather in my Location</h4>
+        </div>
+
+        <a href="#searchIn" class="icon-square search col-sm-4">
+        <div >
+          <i class="fas onHover fa-search fa-5x"></i>
+          <h4>Search for Weather</h4>
+        </div>
+          </a>
+
+        <div class="icon-square randomWeather col-sm-4">
+          <i class="fas onHover fa-map fa-5x"></i>
+          <h4>Random Weather</h4>
+        </div>
+
+      </div>
+
+      <div class="row searchArea">
+        <div class="col-sm-2 col-sm-2-offset"> </div>
+        <input id="searchIn" class="col-sm-6 inputArea" type="text" name="city" placeholder="Example: Zurich" value="">
+        <button type="button" name="button" id="searchBTN" class="btn btn-default col-sm-2">Search</button>
+
+      </div>
+
+      <div class="row alert-area ">
+        <div class="col-sm-2 col-sm-2-offset"> </div>
+        <div class="alert alert-danger col-sm-8" role="alert">
+         <p class="text-center">Please enter a valid city</p>
+      </div>
+
+      </div>
+
+
+
+    </div>
+
+    <div class="row ">
+      <div class="col-sm-3  col-sm-offset-3">
+
+      </div>
+      <div class="col results col-sm-3">
+        <div class="row">
+          <h5 id="city"></h5>
+
+          </div>
+
+        <br>
+
+        <div class="row">
+
+          <p class="temp">Temp: <b id="tempVal"> </b> </p>
+          <div>
+            <a id="celcius" class="tempSwitch active" href="#">°C</a>
+            <p class="temp ">|</p>
+            <a id="farenheid" class="tempSwitch " href="#">°F</a>
+          </div>
+        </div>
+        <div class="row"><p >Wind: <b id="wind"></b></p></div>
+        <div class="row"><p >Humidity: <b id="humidity"></b></p></div>
+
+
+      </div>
+
+      <div class="col col-sm-3 results2">
+        <img id="weather-icon" class="icon " style="width:128px" src="img/weather/01d.png"
+          alt="Icon">
+        <p style="text-align:center;" id="description"><b></b></p>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
